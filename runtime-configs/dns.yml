@@ -65,6 +65,7 @@ variables:
     extended_key_usage:
     - server_auth
   type: certificate
+  update_mode: converge
 - name: /dns_healthcheck_client_tls
   options:
     ca: /dns_healthcheck_tls_ca
@@ -73,6 +74,7 @@ variables:
     extended_key_usage:
     - client_auth
   type: certificate
+  update_mode: converge
 - name: /dns_api_tls_ca
   options:
     common_name: dns-api-tls-ca
@@ -86,6 +88,7 @@ variables:
     extended_key_usage:
     - server_auth
   type: certificate
+  update_mode: converge
 - name: /dns_api_client_tls
   options:
     ca: /dns_api_tls_ca
@@ -94,3 +97,4 @@ variables:
     extended_key_usage:
     - client_auth
   type: certificate
+  update_mode: converge
